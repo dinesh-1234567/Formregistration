@@ -1,0 +1,8 @@
+{% extends "base/base.html" %}
+{% block start %}
+{% if request.user.is_authenticated %}
+<div><a href="">Logout</a></div>
+{% else %}
+<div><a href="">Login</a></div>
+{% endif %}
+{% endblock %}
